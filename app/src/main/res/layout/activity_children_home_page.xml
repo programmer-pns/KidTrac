@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".ChildrenHomePage">
+    <LinearLayout
+        android:id="@+id/wish_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="50dp">
+        <TextView
+            android:id="@+id/child_wish_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Good Evening!"/>
+        <TextView
+            android:id="@+id/child_name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/logo_text_color"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="User Name"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Your ID is"
+        android:textColor="@color/white"
+        android:layout_above="@id/child_id_text_view"/>
+
+    <TextView
+        android:id="@+id/child_id_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="4839843984793"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_refresh"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/child_id_text_view"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/logo_text_color"
+        android:text="Refresh Your Location" />
+</RelativeLayout>

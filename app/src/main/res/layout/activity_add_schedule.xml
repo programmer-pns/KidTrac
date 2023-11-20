@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/primary"
+    tools:context=".AddScheduleActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:background="@color/primary">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/from_time_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Start Time"
+            app:errorEnabled="true"
+            app:errorTextColor="@color/red"
+            app:boxStrokeColor="@color/white"
+            app:hintAnimationEnabled="true"
+            app:hintTextColor="@color/white"
+            android:layout_marginBottom="15dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/from_time_et"
+                android:editable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="12sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/to_time_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="End Time"
+            app:errorEnabled="true"
+            app:errorTextColor="@color/red"
+            app:boxStrokeColor="@color/white"
+            app:hintAnimationEnabled="true"
+            app:hintTextColor="@color/white"
+            android:layout_marginBottom="15dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/to_time_et"
+                android:editable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="12sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Select Location From Map"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"/>
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/maps_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:name="com.google.android.gms.maps.SupportMapFragment"/>
+        <Button
+            android:id="@+id/save_schedule_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="12sp"
+            android:text="Save Schedule"/>
+    </LinearLayout>
+</ScrollView>

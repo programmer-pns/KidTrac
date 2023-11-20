@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "524017219806",
+    "project_id": "waver-ac812",
+    "storage_bucket": "waver-ac812.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:524017219806:android:a302abba96d8f0073e2a4f",
+        "android_client_info": {
+          "package_name": "com.pns.waver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "524017219806-s0kuuqhavdhg0pgg2tua7m4co72btf98.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAD9EFF6TBledlAkCT--V78scqMNCVDI_o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "524017219806-s0kuuqhavdhg0pgg2tua7m4co72btf98.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:524017219806:android:b7fe4162de1c5bd93e2a4f",
+        "android_client_info": {
+          "package_name": "com.sonali.kidtrac"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "524017219806-s0kuuqhavdhg0pgg2tua7m4co72btf98.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAD9EFF6TBledlAkCT--V78scqMNCVDI_o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "524017219806-s0kuuqhavdhg0pgg2tua7m4co72btf98.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
