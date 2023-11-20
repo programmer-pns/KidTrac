@@ -53,9 +53,6 @@
         <service
             android:name=".helper.LocationService"
             android:exported="false" />
-        <service
-            android:name=".helper.ParentService"
-            android:exported="false"/>
 
         <activity
             android:name=".SubmitOtpScreen"
